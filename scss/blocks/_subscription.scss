@@ -1,0 +1,213 @@
+.subscription {
+    background-image: url(../img/subscription.jpg);
+    min-height: 448px;
+    background-size: 100% 448px;
+
+    @include tablet {
+        background-image: url(../img/subscription-tablet.jpg);
+        min-height: 614px;
+        background-size: 100% 614px;
+    }
+
+    @include mobile {
+        background-image: url(../img/subscription-mobile.jpg);
+        min-height: 550px;
+        background-size: 100% 550px;
+    }
+
+    &__location {
+        display: flex;
+        justify-content: space-between;
+        
+        @include tablet{
+display: block;
+        }
+
+        &-info{
+            @include tablet {
+                width: 44%;
+    min-height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+            }
+        }
+    
+        &-img {
+            height: 96px;
+            width: 96px;
+            padding: 0 0 30px;
+            margin-top: 97px;
+            margin-left: 37%;
+            margin-right: 50%;
+
+       @include tablet {
+        margin-top: 64px;
+margin-left: 43%;
+margin-right: 50%;
+}
+
+@include mobile {
+    height: 92px;
+    width: 92px;
+    margin-left: 23%;
+margin-right: 30%;
+}
+        }
+            
+        &-text {
+            min-height: 99px;
+            width: 360px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: $dark-grey;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include mobile {
+                min-height: 73px;
+                width: 343px; 
+                font-size: 18px;
+                line-height: 22px;
+                margin-left: -60%;
+                margin-right: -50%;
+            }
+            }
+            
+        &-text-italic {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+
+            @include mobile {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            }
+
+            &-title {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 40px;
+                text-align: center;
+                text-transform: uppercase;
+
+                @include mobile {
+                line-height: 37px;
+                }
+            }
+
+            &-subtitle {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: center;
+                text-transform: uppercase;
+
+                @include mobile {
+                    font-size: 14px;
+                line-height: 21px;
+                }
+                }
+
+        &-subscribe {
+            min-height: 142px;
+            width: 557px;
+            margin: 110px 0 0;
+
+            @include tablet {
+                margin: 48px 0 0;
+            width: 72%;
+        min-height: 137px;
+        margin-left: auto;
+        margin-right: auto;
+            }
+
+            @include mobile {
+                width: 341px;
+                min-height: 123px;
+            }
+                
+                &-text {
+                min-height: 61px;
+                width: 557px;
+
+                @include tablet {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                @include mobile {
+                    width: 271px;
+                    min-height: 54px;
+                }
+                }
+                
+                &-form {
+                min-height: 49px;
+                width: 356px;
+                margin: 32px 0 0 100px;
+                display: flex;
+
+                @include tablet {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                @include mobile {
+                    width: 341px;
+                    min-height: 47px;
+                }
+                }
+        }     
+    } 
+}
+
+.email {
+min-height: 49px;
+width: 256px;
+border-radius: 0px;
+border-top-left-radius: 80px;
+border-bottom-left-radius: 80px;
+background-color: #E1E1E1;
+border: none;
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+text-align: left;
+padding: 7px 64px 6px 22px;
+}
+
+.email:hover,
+.email:focus {
+background-color: $pink;
+outline: none;
+border: 1px solid $dark-pink;
+}
+
+.submit {
+min-height: 49px;
+width: 160px;
+border-radius: 0px;
+background-color: $dark-pink;
+border-top-right-radius: 80px;
+border-bottom-right-radius: 80px;
+border: none;
+color: $total-white;
+font-size: 14px;
+font-weight: 400;
+padding: 7px 7px 6px 8px;
+line-height: 17px;
+text-align: center;
+}
+
+.submit:hover {
+background-color: $dark-blue;
+}
+
+.submit:active {
+    opacity: 0.5;
+}

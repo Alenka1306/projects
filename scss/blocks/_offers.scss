@@ -1,0 +1,81 @@
+.offers {
+
+    &__list {
+        @include flex-wrap();
+    }
+        
+        &__item {
+        color: white;
+        width: 31%; 
+        min-height: 260px;
+        background-color: $brown;
+        background-size: cover;
+        margin: 0 0 30px;
+        @include flex-center();
+
+        @include tablet {
+            min-height: 167px;
+            margin: 0 0 20px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 248px;
+        }
+
+        &:hover,  &:focus {
+            opacity: 0.7;
+            }
+            
+            &:active {
+            color: red;
+            }
+            
+            &-woman {
+                background-image: url(../img/forwoman.jpg);
+            }
+            
+            &-man {
+            background-image: url(../img/forman.jpg);
+            }
+            
+            &-kids {
+                background-image: url(../img/forkids.jpg);
+                }
+            
+            &-accesories {
+                background-image: url(../img/accesories.jpg);
+                width: 100%;
+                margin: 0;
+                
+                @include tablet {
+                    min-height: 116px;
+                }
+                @include mobile{
+                    min-height: 111px;
+                }
+
+                }
+            
+                &-title {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: normal;
+                color: $total-white;
+            }
+            
+            &-subtitle {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $dark-pink;
+            letter-spacing: 1px;
+            }
+        }
+}
+
