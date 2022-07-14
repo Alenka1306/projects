@@ -1,0 +1,382 @@
+.data {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include mobile {
+        width: 343px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    &_cart {
+        margin: 96px 129px 128px 0px;
+
+        @include tablet {
+            margin: 59px 0 0;
+        }
+
+        @include mobile {
+            margin: 39px 0 0;
+        }
+        
+    }
+
+    .cart-img {
+        width: 652px;
+
+        @include tablet {
+            width: 757px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+     .cart-1 {
+            min-height: 306px;
+            width: 652px;
+          position: relative;
+        
+        @include tablet {
+                width: 734px;
+                margin-left: auto;
+             margin-right: auto;
+          }
+
+            @include mobile {
+                width: 343px;
+                min-height: 188px;
+            }
+        }
+        
+        .cart-cross-1 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            color: rgb(87, 87, 87);
+            background-color: transparent;
+            height: 16px;
+            width: 16px;
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+            margin: 28px 64px 0px 0px;
+
+            @include tablet {
+                margin: 21px 44px 0px 0px;
+            }
+
+            @include mobile {
+                margin: 21px 48px 0px 0px;
+            }
+        }
+        
+        .cart-2 {
+            min-height: 306px;
+            width: 652px;
+            position: relative;
+
+        @include tablet {
+                width: 734px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @include mobile {
+                width: 343px;
+                min-height: 188px;
+            }
+        }
+        
+        .cart-cross-2 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            color: rgb(87, 87, 87);
+            background-color: transparent;
+            height: 18px;
+            width: 18px;
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+            margin: 28px 64px 0px 0px;
+
+            @include tablet {
+                margin: 21px 44px 0px 0px;
+            }
+
+            @include mobile {
+                margin: 21px 48px 0px 0px;
+            }
+        }
+    
+    
+    .button {
+        display: flex;
+        margin-top: 72px;
+
+        @include tablet {
+margin-top: 62px;
+justify-content: center;
+        }
+
+        @include mobile {
+            margin-top: 30px;
+        }
+
+        &_clear {
+            height: 50px;
+            width: 235px;
+            background-color: $total-white;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            border: 1px solid $light-grey;
+            margin: 0 193px 0px 0px;
+
+            @include tablet {
+            height: 49px;
+            width: 234px;
+            margin: 0 48px 0 0;
+            }
+
+            @include mobile {
+                height: 32px;
+                width: 174px;
+                margin: 0 9px 0 0; 
+            }
+            
+            &-text {
+                text-transform: uppercase;
+                color: rgb(0, 0, 0);
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 17px;
+                text-decoration: none;
+            }
+        
+            &:active, &-text:active {
+                opacity: 0.5;
+            }
+            
+            &:hover, &-text:hover {
+                background-color: $dark-pink;
+                color: $total-white;
+            }
+        }
+        
+        &_continue {
+            height: 50px;
+            width: 225px;
+            background-color: $total-white;
+            border: 1px solid $light-grey;
+            margin: 0;
+
+            @include mobile {
+                height: 32px;
+            width: 174px;
+            }
+
+            &-text {
+                text-transform: uppercase;
+                color: rgb(0, 0, 0);
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 17px;
+                text-decoration: none;
+            }
+            
+            &:active, &-text:active {
+                opacity: 0.5;
+            }
+            
+            &:hover, &-text:hover {
+                background-color: $dark-pink;
+                color: $total-white;
+            }
+        }
+        
+    }
+    
+    .data_adress {
+        margin: 113px 0px 342px;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            margin: 65px 0 0;
+        }
+
+        @include mobile {
+            display: block;
+           margin: 48px 0 0;
+        }
+    }
+    
+    .adress-text {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        text-align: left;
+        color: $dark-blue;
+        text-transform: uppercase;
+        margin: 0px 0px 21px;
+    }
+    
+    .adress-name {
+        display: block;
+        height: 45px;
+        width: 360px;
+        border: 1px solid $light-grey;
+        margin: 0px 0px 21px;
+
+        @include mobile {
+            width: 359px;
+            height: 44px;
+        }
+
+        @include mobile {
+            width: 350px; 
+        }
+    }
+    
+    [type="text"]:hover, [type="text"]:focus {
+        background-color: $pink;
+        outline: none;
+        border: 1px solid $dark-pink;
+    }
+    
+    .adress-button {
+        text-transform: uppercase;
+        height: 34px;
+        width: 100px;
+        background-color: $total-white;
+        border: 1px solid $light-grey;
+        margin: 3px 0px 0px;
+
+        @include tablet{
+            margin: 3px 0px 129px; 
+        }
+
+        @include mobile {
+            margin: 3px 0px 0px; 
+        }
+    }
+    
+    .adress-button-text {
+        color: rgb(74, 74, 74);
+        font-family: Lato;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 13px;
+        text-decoration: none;
+    }
+    
+    .adress-button:active, .adress-button-text:active {
+        opacity: 0.5;
+    }
+    
+    .adress-button:hover, .adress-button-text:hover {
+        background-color: $dark-pink;
+        color: $total-white;
+    }
+    
+    .total {
+        height: 214px;
+        width: 360px;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+        background: rgb(245, 243, 243);
+        margin: 57px 0px 0px;
+
+        @include tablet {
+            margin: 39px 0 0;
+        }
+
+        @include mobile {
+            margin: 48px 0 96px;
+            width: 350px;
+        }
+    }
+    
+    .total-sub {
+        text-transform: uppercase;
+        height: 13px;
+        width: 108px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        text-align: right;
+        color: rgb(74, 74, 74);
+        padding: 39px 34px 12px 218px;
+    }
+    
+    .total-grand {
+        text-transform: uppercase;
+        height: 19px;
+        width: 170px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        text-align: right;
+        padding: 0px 37px 21px 153px;
+    }
+    
+    .total-grand-pink {
+        font-weight: 700;
+        line-height: 19px;
+        text-align: right;
+        color: $dark-pink;
+    }
+    
+    .total-line {
+        padding: 0px 42px 17px;
+    }
+    
+    .total-button {
+        height: 50px;
+        width: 273px;
+        background-color: $dark-pink;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+        margin: 0px 43px 42px 44px;
+    }
+    
+    .total-button-text {
+        text-transform: uppercase;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        color: $total-white;
+        text-decoration: none;
+    }
+    
+    .total-button:active, .total-button-text:active {
+        opacity: 0.5;
+    }
+    
+    .total-button:hover, .total-button-text:hover, .total-button:focus, .total-button-text:focus {
+        background-color: $dark-blue;
+        color: $total-white;
+    }
+
+}
+
