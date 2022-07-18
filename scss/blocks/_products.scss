@@ -1,0 +1,172 @@
+.products {
+    &__title {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+        color: $dark-blue;
+        text-align: center;
+        margin: 96px 0 6px;
+        }
+        
+        &__subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #9F9F9F;
+        margin: 6px 0 48px;
+
+        @include tablet {
+            margin: 3px 0 73px;
+        }
+
+        @include mobile {
+            margin: 3px 0 65px;
+        }
+        }
+        
+        &__card-wrapper {
+            @include flex-wrap();
+
+@include mobile {
+    justify-content: center;
+}            
+        }
+        
+        &__card {
+        height: 581px;
+        width: 360px;
+        margin: 0 0 30px;
+        background-color: #F8F8F8;
+
+        @include tablet{
+            margin: 0 0 16px ;
+        }
+        }
+        
+        &__card-title {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left; 
+            color: #000000;
+            text-transform: uppercase;
+            margin: 18px 25px;  
+            background-color: #F8F8F8; 
+        }
+        
+        &__card-subtitle {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left; 
+            color: #5D5D5D; 
+            margin: 16px 13px;  
+        }
+        
+        &__card-price {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $dark-pink;
+            margin: 18px 18px;
+        }
+        
+        
+        .cart-wrapper-overlay {
+            position: relative;
+            height: 420px;
+        }
+        
+        .cart-wrapper-overlay:before {
+            content: '';
+            width: 100%;
+            min-height: 100%;
+            background:#3A3838DB;
+            opacity: 86%;
+            position: absolute;
+            top: 0;
+        }
+        
+        .cart-wrapper-overlay:before {
+        display: none;
+        }   
+        
+        .cart__button-overlay {
+            min-height: 43px;
+            width: 138px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid;
+            border-color: $total-white;
+            color: $total-white;
+            padding: 14px 15px 12px 0px;
+            background-color: transparent;
+            font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        }
+        
+        .cart__button-overlay {
+        display: none;
+        }
+        
+        .cart__button-overlay:hover, .cart__button-overlay:focus {
+            background-color: $dark-pink;
+        }
+        
+        .cart__button-overlay:active {
+            opacity: 0.7;
+        }
+        
+        .cart-stroke {
+        min-height: 24px;
+        width: 26px;
+        background-color: transparent;
+        margin: -3px 11px -4px 8px;
+        }
+        
+        &__card:hover .cart-wrapper-overlay:before {
+            display: block;
+        }
+        
+        &__card:hover .cart__button-overlay {
+            display: block;
+        }
+        
+        .button-location {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+        min-height: 48px;
+        width: 212px;
+        border: 1px solid;
+        border-color: #F26376;
+        background-color: transparent;
+        text-align: center;
+        margin: 49px 0;
+        color: #F26376;
+        }
+        
+        .button:hover {
+            background-color: $dark-pink;
+            color: $total-white;
+        }
+        
+        .button:active {
+            opacity: 0.5;
+        }
+        
+
+}
+

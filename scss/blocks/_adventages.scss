@@ -1,0 +1,70 @@
+.adventages {
+    background-color: $dark-grey;
+
+    &__card {
+        margin: 103px 30px 104px 0;
+        width: 360px;
+        min-height: 133px;
+
+        @include tablet {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 48px 0 0;
+            min-height: 134px;
+        }
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            min-height: 341px;
+            text-align: center;
+
+            @include tablet{
+                display: block;
+                justify-content: center;
+                min-height: 610px;
+        }
+            }
+        
+        &-img-1 {
+            margin: 0 0 23px;
+        }
+        
+        &-img-2 {
+            margin: 0 0 19px;
+        }
+        
+        &-img-3 {
+            margin: 0 0 22px;
+        }
+        
+        &-title {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $white;
+            margin:0 0 16px;
+        }
+        
+        &-subtitle {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $white;
+        }
+
+    }
+    
+    &__card-3 {
+        @include tablet{
+            padding: 48px 0 63px;
+        }
+    }
+}
+
